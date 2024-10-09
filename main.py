@@ -22,19 +22,9 @@ characters = "^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
 for x in range(imageHeight):
     for y in range(imageWidth):
         rgbTuple = pixel[y, x]
-        # print(f"Pixel at {y},{x} Tuple : {rgbTuple}")
         average = sum(rgbTuple) / 3
-        # print(f"Average = {average}")
         brightnessMatrix[x][y] = int(average)
-
-
-# Printing to terminal. Not viable as VScode terminal does cannot handle all the text
-# for x in range(imageHeight):
-#     for y in range(imageWidth):
-#         characterMatrix[x][y] = brightness_to_character(brightnessMatrix[x][y], characters)
-#         print(characterMatrix[x][y], end='')
-#     print()
-
+        
 file = open("output.txt", "w")
 
 for x in range(imageHeight):
