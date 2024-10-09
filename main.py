@@ -18,7 +18,6 @@ characterMatrix = [[0 for j in range(imageWidth)] for x in range(imageHeight)]
 
 characters = "^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
 
-
 for x in range(imageHeight):
     for y in range(imageWidth):
         rgbTuple = pixel[y, x]
